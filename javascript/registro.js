@@ -45,9 +45,14 @@
                 title: 'Registro exitoso',
                 text:"usuario ha sido registrado correctamente",
                 icon:"success",
-                showConfirmButton:true
+                showConfirmButton:true,
+            }).then(res=>{
+              if(res.isConfirmed){
+
+                window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/login.html"
+              }
+
             })
-            window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/login.html"
           }
          
           return response.text();

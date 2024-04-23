@@ -1,0 +1,42 @@
+.linea {
+    display: flex;
+    content: "";
+    width: 2050px;
+    height: 4px;
+    background-color: black;
+    margin: 20px 0px;
+ }
+.TRABAJADORES{
+display: flex;
+
+}
+.img1{
+    margin: 40px 30px;
+}
+.img2{
+    margin: 40px 30px;
+}
+.img3{
+    margin: 40px 30px;
+}
+.img4{
+    margin: 40px 30px;
+}
+.SUBTITULOS{
+    display: flex;
+}
+.subtitulo1{
+    margin: 0px 80px;
+}
+.subtitulo2{
+    margin: 0px 145px;
+}
+.subtitulo3{
+    margin: 0px 100px;
+}
+.subtitulo4{
+    margin: 0px 110px;
+}
+h2{
+    color: yellow;
+}

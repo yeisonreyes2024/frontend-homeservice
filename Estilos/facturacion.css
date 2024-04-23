@@ -1,0 +1,204 @@
+
+main{
+    display: relative;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+
+h1 {
+    position: relative;
+    left: 200px
+    font-size: 70px;
+}
+
+.subtitulo {
+    font-size: 38px;
+    color: black;
+    position: relative;
+    bottom: -15px;
+    left: 200px;
+}
+
+.primero {
+    text-align: center;
+    position: relative;
+    top: -90px;
+    left: 1600px;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.segundo {
+    text-align: center;
+    position: relative;
+    top: -80px;
+    left: 1620px;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.tercero {
+    text-align: center;
+    position: relative;
+    top: 90px;
+    left: 1490px;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.cuarto {
+    text-align: center;
+    position: relative;
+    top: 90px;
+    left: 1500px;
+    background-color: blue;
+    color: white;
+    width: 110px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.quinto {
+    text-align: center;
+    position: relative;
+    top: 90px;
+    left: 1510px;
+    background-color: blue;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 20px;
+}
+
+.linea {
+    display: flex;
+    content: "";
+    width: 2050px;
+    height: 4px;
+    background-color: black;
+    margin: -80px 200px;
+}
+
+.linea1 {
+
+    width: 4px;
+    height: 710px;
+    background-color: black;
+    margin: -600px 850px;
+    position: relative;
+    bottom: 360px;
+
+}
+
+.linea2 {
+    display: flex;
+    content: "";
+    width: 900px;
+    height: 4px;
+    background-color: black;
+    margin: -520px 915px;
+    text-align: right;
+
+}
+
+.plomero {
+    margin: 70px;
+}
+
+.servidor {
+    color: blue;
+    font-size: x-large;
+    position: relative;
+    bottom: 280px;
+    left: -300px;
+    text-align: center;
+}
+
+.domicilio {
+    font-size: xx-large;
+    position: relative;
+    bottom: 200px;
+}
+
+.carrito1 {
+    font-size: xx-large;
+    color: black;
+    position: relative;
+    top: -400px;
+    text-align: left;
+    margin-left: 930px;
+}
+
+.CARRITO {
+    font-size: xx-large;
+    color: black;
+    position: relative;
+    top: -350px;
+    text-align: left;
+    margin-left: 930px;
+
+}
+
+.derecha {
+    font-size: xx-large;
+    color: black;
+    position: relative;
+    left: 1700px;
+    bottom: 490px;
+}
+
+.total {
+    font-size: xx-large;
+    color: black;
+    position: relative;
+    left: 930px;
+    bottom: -500px;
+}
+
+.total1 {
+    font-size: xx-large;
+    color: black;
+    position: relative;
+    left: 1700px;
+    bottom: -430px;
+}
+
+.gris {
+    position: relative;
+    left: 1100px;
+    bottom: -420px;
+    background-color: grey;
+    color: black;
+    width: 500px;
+    height: 100px;
+    font-size: 35px;
+    border-radius: 35px;
+}
+
+.azul {
+    position: relative;
+    left: 600px;
+    bottom: -540px;
+    background-color: blue;
+    color: white;
+    width: 500px;
+    height: 100px;
+    font-size: 35px;
+    border-radius: 20px;
+
+}

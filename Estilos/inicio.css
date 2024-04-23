@@ -1,0 +1,15 @@
+.linea {
+   display: flex;
+   content: "";
+   width: 2050px;
+   height: 4px;
+   background-color: black;
+   margin: 20px 0px;
+}
+.PRINCIPAL {
+   display: flex;
+   margin: 0px 300px;
+}
+h2 {
+   text-align: center;
+}

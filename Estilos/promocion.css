@@ -1,0 +1,32 @@
+.linea {
+    display: flex;
+    content: "";
+    width: 2050px;
+    height: 4px;
+    background-color: black;
+    margin: 20px 0px;
+ }
+
+.descuento {
+    display: flex;
+}
+.descuento1 {
+    margin: 0px 0px;
+
+}
+.descuento2{
+    margin: -30px 980px;
+}
+.dias{
+    text-align: center;
+    margin: -200px 0px;
+    font-size: xx-large;
+}
+.fontanero{
+    margin: -400px 940px;
+}
+.texto {
+    text-align: left;
+    margin: 300px 0px;
+    font-size: large;
+}

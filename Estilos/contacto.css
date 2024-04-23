@@ -1,0 +1,28 @@
+.linea {
+    display: flex;
+    content: "";
+    width: 2050px;
+    height: 4px;
+    background-color: black;
+    margin: 20px 0px;
+ }
+.TODAS{
+    display: flex;
+}
+.foto1 {
+    margin: 30px 140px;
+}
+.foto2 {
+    margin: 30px 140px;
+}
+.foto3 {
+    margin: 30px 140px;
+}
+.perfil2 {
+    text-align: center;
+    margin: -200px 0px;
+}
+.perfil3 {
+    text-align: right;
+    margin: 0px 0x;
+}

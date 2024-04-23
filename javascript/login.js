@@ -34,13 +34,17 @@ document.getElementById('loginForm').addEventListener('submit',function (event){
                 title: 'Ingreso exitoso',
                 text:"Bienvenido a Homeservice",
                 icon:"success",
-                showConfirmButton:true
+                showConfirmButton:true,
+            }).then(res=>{
+              if(res.isConfirmed){
+                window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/dashboard.html"
+                return response.text();
+
+              }
+
             })
-            // window.location.href="http://127.0.0.1:5500/frontend-homeService/index.html"
-            window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/dashboard.html"
           }
          
-          return response.text();
     })
     .then((result) => {
        

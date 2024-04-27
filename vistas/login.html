@@ -7,6 +7,8 @@
     <title>Login</title>
     <link rel="stylesheet" href="../Estilos/login.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
 </head>
 
 <body>
@@ -19,14 +21,18 @@
 
                     <input id="email" type="email" autocomplete="email" placeholder="Correo Electronico" required class="email"><br>
                     <input id="password" type="password" placeholder="password" required class="password"><br>
-                    <a href=""> ¿Olvidadeste contraseña?</a><br>
+                    <select id="select" class="select" required>
+                        <option value="cliente" selected>Cliente</option>
+                        <option value="prestador">Prestador de servicios</option>
+                    </select>
+                    <br/>
+                    <a href=""> ¿Olvidaste contraseña?</a><br>
                     <button type="submit" >Entrar</button>
                 </form>
             </div>
         </div>
     </main>
-    <script src="../javascript/login.js">
+    <script src="../javascript/login.js"></script>
 
-    </script>
 </body>
 </html>

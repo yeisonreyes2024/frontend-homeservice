@@ -4,51 +4,76 @@ document.getElementById('loginForm').addEventListener('submit',function (event){
   event.preventDefault()
     const email= document.getElementById("email").value
     const pass= document.getElementById("password").value
-    // console.log(e,p);
-    const myHeaders = new Headers();
-    myHeaders.append("Content-Type", "application/json");
-    
-    const raw = JSON.stringify({
+   const type= document.getElementById("select").value
+    const data = {
       "email": email,
       "password": pass
-    });
-    
-    const requestOptions = {
-      method: "POST",
-      headers: myHeaders,
-      body: raw,
-      redirect: "follow"
-    };
-    
-    fetch("http://localhost:3000/login", requestOptions)
-      .then((response) => {
-          console.log('response',response)
-          if(response.status == 400){
-            Swal.fire({
-                title: 'No se encontró el usuario',
-                icon:"warning",
-                showConfirmButton:true
-            })
-          }else{
-            Swal.fire({
-                title: 'Ingreso exitoso',
-                text:"Bienvenido a Homeservice",
-                icon:"success",
-                showConfirmButton:true,
-            }).then(res=>{
-              if(res.isConfirmed){
-                window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/dashboard.html"
-                return response.text();
+    }
 
+    if(type == "cliente"){
+      axios.post("http://localhost:3000/usuario/login",data).then((response)=>{
+      if(response.data.error === true){
+        Swal.fire({
+            title: 'No se encontró el usuario',
+            icon:"warning",
+            showConfirmButton:true
+        })
+      }else{
+                Swal.fire({
+                    title: 'Ingreso exitoso',
+                    text:`Bienvenido a Homeservice ${response.data.data.nombre}`,
+                    icon:"success",
+                    showConfirmButton:true,
+                }).then(res=>{
+                  if(res.isConfirmed){
+                    window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/dashboard.html"
+                    return response.text();
+    
+                  }
+    
+                })
               }
-
-            })
-          }
-         
+             
+    }).catch(error=>{
+      console.log('error',error);
+      Swal.fire({
+        title: 'No se encontró el usuario',
+        icon:"warning",
+        showConfirmButton:true
     })
-    .then((result) => {
-       
-        
     })
-    .catch((error) => console.error(error));
+    }else{
+      axios.post("http://localhost:3000/prestador_servicio/login",data).then((response)=>{
+      if(response.data.error === true){
+                Swal.fire({
+                    title: 'No se encontró el usuario',
+                    icon:"warning",
+                    showConfirmButton:true
+                })
+              }else{
+                Swal.fire({
+                    title: 'Ingreso exitoso',
+                    text:`Bienvenido a Homeservice ${response.data.data.nombre}`,
+                    icon:"success",
+                    showConfirmButton:true,
+                }).then(res=>{
+                  if(res.isConfirmed){
+                    window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/dashboard.html"
+                    return response.text();
+    
+                  }
+    
+                })
+              }
+             
+    }).catch(error=>{
+      Swal.fire({
+        title: 'No se encontró el usuario',
+        icon:"warning",
+        showConfirmButton:true
+    })
+    })
+    }
+    
+    
 })

@@ -26,7 +26,7 @@ body {
 /* LAYOUT */
 
 .menu-dashboard {
-    max-width: 150px;
+    max-width: 180px;
     height: 100%;
     background: var(--bg-menu);
     padding: 20px;
@@ -47,7 +47,7 @@ body {
 .top-menu .logo img {
     width: 120px;
     transition: width .3s ease;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.078);
 }
 
 .top-menu .logo span {

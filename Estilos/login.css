@@ -91,7 +91,7 @@ button{
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 60px;
+    max-width: 80px;
     position: relative;
     left: 365px;
     padding: 5px;
@@ -100,6 +100,21 @@ button{
     border: none;
     cursor: pointer;
 } 
+.B_registro{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 80px;
+    position: relative;
+    left: 365px;
+    padding: 5px;
+    font-size: 17px;
+    background-color: rgb(152, 182, 238);
+    border: none;
+    cursor: pointer;
+}
+
+
 
 .select{
     margin-left: 300px;

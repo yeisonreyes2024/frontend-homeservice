@@ -5,7 +5,7 @@
     const email= document.getElementById("email").value
     const pass= document.getElementById("password").value
     const apellidos= document.getElementById("apellidos").value
-    const nombres= document.getElementById("nombre").value
+    const nombres= document.getElementById("nombres").value
     const direccion= document.getElementById("direccion").value
     const celular= document.getElementById("telefono").value
     const identificacion= document.getElementById("identificacion").value

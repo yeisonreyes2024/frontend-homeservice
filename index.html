@@ -1,60 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Service</title>
-    <link rel="stylesheet" href="inicio.css">
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <title>HomeService</title>
+    <link rel="stylesheet" href="..//Estilos/inicio_prueba.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
-    <!--esto es la cabeza del proyecto-->
-
-    <div class="head_inicio">
-        <h1>HOMESERVICE</h1>
-    </div>
-    <div class="linea">
-
-    </div>
-
-    <!--esto es el cuerpo del protecto-->
-
-    <body>
+    <div class="container">
         <nav>
-            <button><a href="index.html">inicio</a></button>
-            <button><a href="Body/servicios.html">Servicios</a></button>
-            <button><a href="Body/facturacion.html">Facturación</a></button>
-            <button><a href="vistas/login.html">Iniciar Sesión</a></button>
-            <button><a onclick="mostrarAlerta()">Registrate</a></button>
-            <!-- <button><a href="vistas/registro.html">Registrate</a></button> -->
+            <span class="logo"><img src="../logos/WhatsApp_Image_2024-04-18_at_20.18.06-removebg-preview.png" alt="logo_HomeService"></span>
+            <ul class="lista">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="/Body/servicios.html">Servicios</a></li>
+                <li><a href="/Body/facturacion.html">Facturacion</a></li>
+                <li><a href="/vistas/login.html">Iniciar Seccion</a></li>
+                <li><a href="/vistas/registro.html">Registro</a></li>
+            </ul>
         </nav>
-        <div class="PRINCIPAL">
-            <img src="https://aprende.com/wp-content/uploads/2023/02/Foto-1-12.jpg" alt="600" width="700">
+        <header>
+            <h1>BIENVENIDOS</h1>
+            <h2>HomeService</h2>
+            <p>Somos una herramienta para darle solución a tus problemas del hogar <br> especializados en conectar sonrisas y optimizar el tiempo.</constantemente></p>
+            <button type="button">
+                Mas Informacion
+                <img class="flecha" src="../frontend-homeservice/logos/bxs-right-arrow-alt.svg" alt="flecha">
+            </button>
+        </header>
+         <img class="emp" src="../logos/Foto-1-12-removebg-preview.png" alt="señor midiendo">
+         <img class="fondo-emp" src="../logos/pattern..png" alt="fondo azul">
+        <div class="icons">
+            <i class='bx bxl-invision'></i>
+            <i class='bx bxl-dropbox' ></i>
+            <i class='bx bxl-linkedin' ></i>
         </div>
-
-        <h2>Te damos la bienvenidad a HOMESERVICE</h2>
-        <script  src="./javascript/dashboard.js"></script>
-    </body>
-    <!--esto es el footer-->
-    <footer>
-        <nav>
-            <a href="#">imprint</a>
-            <a href="#">terms & conditions</a>
-            <a href="#">privace notice</a>
-            <a href="#">Data preferences</a>
-        </nav>
-        <div class="redes sociales">
-            <p>puedes encontrarnos en:</p>
-            <img src="https://proceso.hn/wp-content/uploads/2023/07/Twitter-2-696x415.jpg" alt="25" height="30">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
-                alt="30" height="30">
-            <img src="https://static.vecteezy.com/system/resources/previews/018/930/415/original/instagram-logo-instagram-icon-transparent-free-png.png"
-                alt="40" height="40">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Pinterest-logo.png" alt="30" height="30">
-        </div>
-    </footer>
+    </div>
 </body>
-
 </html>

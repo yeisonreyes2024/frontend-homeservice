@@ -14,21 +14,24 @@
 <body>
     <main>
         <div class="todo">
-            <img src="../logos/WhatsApp_Image_2024-04-18_at_20.18.06-removebg-preview.png" alt="">
+            <a href="/index.html">
+              <img src="../logos/WhatsApp_Image_2024-04-18_at_20.18.06-removebg-preview.png" alt="">
+            </a>
             <h1>Iniciar Sesion</h1><br>
             <div class="formularios">
                 <form id="loginForm">
 
-                    <input id="email" type="email" autocomplete= "email" placeholder="Correo Electronico" required class="email"><br>
+                    <input id="email" type="email" autocomplete="email" placeholder="Correo Electronico" required
+                        class="email"><br>
                     <input id="password" type="password" placeholder="password" required class="password"><br>
                     <select id="select" class="select" required>
                         <option value="cliente" selected>Cliente</option>
                         <option value="prestador">Prestador de servicios</option>
                     </select>
-                    <br/>
+                    <br />
                     <a href=""> ¿Olvidaste contraseña?</a><br>
-                    <button type="submit" >Entrar</button><br>
-                    <button class="B_registro"><a href="../vistas/registro.html">registro</a></button>
+                    <a class="registro_back" href="../vistas/registro.html">Registrar</a><br>
+                    <button type="submit">Entrar</button><br>
                 </form>
             </div>
         </div>
@@ -36,4 +39,5 @@
     <script src="../javascript/login.js"></script>
 
 </body>
+
 </html>

@@ -7,6 +7,7 @@
 }
 
 body{
+    
     background-image: url(../logos/bg3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -34,7 +35,7 @@ img {
     width: 100%;
     max-width: 380px;
     position: relative;
-    left: 300px;
+    left: -10px;
     width: 200px;
 }
 

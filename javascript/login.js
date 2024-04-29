@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit',function (event){
                     showConfirmButton:true,
                 }).then(res=>{
                   if(res.isConfirmed){
-                    window.location.href="/vistas/dashboard.html"
+                    window.location.href="https://frontend-homeservice.vercel.app/vistas/dashboard.html"
                     return response.text();
     
                   }
@@ -58,7 +58,7 @@ document.getElementById('loginForm').addEventListener('submit',function (event){
                     showConfirmButton:true,
                 }).then(res=>{
                   if(res.isConfirmed){
-                    window.location.href="/vistas/dashboard.html"
+                    window.location.href="https://frontend-homeservice.vercel.app/vistas/dashboard.html"
                     return response.text();
     
                   }

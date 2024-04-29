@@ -31,7 +31,7 @@ document.getElementById('registro_prestador_servicioForm').addEventListener('sub
     };
 
     
-    fetch("http://localhost:3000/prestador_servicio/registrar", requestOptions)
+    fetch("http://localhost:3000/prestador-servicio/registrar", requestOptions)
       .then((response) => {
           if(response.status == 400){
             Swal.fire({
@@ -48,7 +48,7 @@ document.getElementById('registro_prestador_servicioForm').addEventListener('sub
             }).then(res=>{
               if(res.isConfirmed){
 
-                window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/login.html"
+                window.location.href="https://frontend-homeservice.vercel.app/frontend-homeService/vistas/login.html"
               }
 
             })

@@ -31,7 +31,7 @@
     };
 
     
-    fetch("http://localhost:3000/registrar", requestOptions)
+    fetch("http://localhost:3000/usuario/registrar", requestOptions)
       .then((response) => {
           if(response.status == 400){
             Swal.fire({
@@ -48,7 +48,7 @@
             }).then(res=>{
               if(res.isConfirmed){
 
-                window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/login.html"
+                window.location.href="https://frontend-homeservice.vercel.app/frontend-homeService/vistas/login.html"
               }
 
             })

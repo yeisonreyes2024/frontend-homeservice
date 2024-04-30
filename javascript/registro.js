@@ -5,7 +5,7 @@
     const email= document.getElementById("email").value
     const pass= document.getElementById("password").value
     const apellidos= document.getElementById("apellidos").value
-    const nombres= document.getElementById("nombre").value
+    const nombres= document.getElementById("nombres").value
     const direccion= document.getElementById("direccion").value
     const celular= document.getElementById("telefono").value
     const identificacion= document.getElementById("identificacion").value
@@ -31,7 +31,7 @@
     };
 
     
-    fetch("http://localhost:3000/registrar", requestOptions)
+    fetch("http://localhost:3000/usuario/registrar", requestOptions)
       .then((response) => {
           if(response.status == 400){
             Swal.fire({
@@ -48,7 +48,7 @@
             }).then(res=>{
               if(res.isConfirmed){
 
-                window.location.href="http://127.0.0.1:5500/frontend-homeService/vistas/login.html"
+                window.location.href="https://frontend-homeservice.vercel.app/vistas/login.html"
               }
 
             })

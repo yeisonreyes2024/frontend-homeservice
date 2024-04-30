@@ -48,7 +48,7 @@ document.getElementById('registro_prestador_servicioForm').addEventListener('sub
             }).then(res=>{
               if(res.isConfirmed){
 
-                window.location.href="https://frontend-homeservice.vercel.app/frontend-homeService/vistas/login.html"
+                window.location.href="https://frontend-homeservice.vercel.app/vistas/login.html"
               }
 
             })

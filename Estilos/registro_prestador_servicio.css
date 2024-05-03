@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,25 +6,178 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body{
-    background-image: url(../logos/bg2.jpg);
+body {
+    background-image: url(/logos/bg3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
 
-main{
+main {
     width: 100%;
     padding: 20px;
     margin: auto;
-    margin-top: 100px;
 }
 
-.todo{
+.todo {
     width: 100%;
     max-width: 800px;
     margin: auto;
     position: relative;
 }
 
+img {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    left: -10px;
+    width: 200px;
+}
+
+h1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px;
+    position: relative;
+    left: 320px;
+    color: rgb(34, 90, 195);
+}
+
+.nombres {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-size: 16px;
+}
+
+.apellidos {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-size: 16px;
+}
+
+.identificacion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-size: 16px;
+}
+
+.telefono {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-size: 16px;
+}
+
+.direccion {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-size: 16px;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-size: 16px;
+}
+
+.password {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-size: 16px;
+}
+
+.t_servicio {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-size: 16px;
+
+}
+
+a {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 310px;
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 80px;
+    position: relative;
+    left: 365px;
+    padding: 5px;
+    font-size: 17px;
+    background-color: rgb(152, 182, 238);
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}

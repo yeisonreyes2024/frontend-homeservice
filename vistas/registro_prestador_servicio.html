@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro prestador de servicio</title>
-    <link rel="stylesheet" href="/Estilos/registro.css">
+    <link rel="stylesheet" href="/Estilos/registro_prestador_servicio.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
 
@@ -13,15 +13,17 @@
     <main>
 
         <div class="todo">
-            <img src="../logos/WhatsApp_Image_2024-04-18_at_20.18.06-removebg-preview.png" alt="">
+
+            <a href="/index.html">
+                <img src="../logos/WhatsApp_Image_2024-04-18_at_20.18.06-removebg-preview.png" alt="">
+            </a>
             <h1>Registrate</h1><br>
+
             <form id="registro_prestador_servicioForm">
-                <input id="nomobres" type="text" autocomplete= "nombres" placeholder="nombres" required class="nombres"><br>
-                <input id="nombres" type="text"><br>
-                <label for="apellidos">Apellidos</label><br>
-                <input id="apellidos" type="text"><br>
-                <label for="identificacion">identificacion</label><br>
-                <input id="identificacion" type="text"><br>
+                <input id="nombres" type="text" autocomplete="nombres" placeholder="nombres" required
+                    class="nombres"><br>
+                <input id="apellidos" type="text" placeholder="Apellidos" class="apellidos"><br>
+                <input id="identificacion" type="text" class="identificacion"><br>
                 <label for="telefono">Celular</label><br>
                 <input id="telefono" type="text"><br>
                 <label for="tipo_servicio">Tipo de servicio</label><br>

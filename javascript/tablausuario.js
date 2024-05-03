@@ -291,10 +291,10 @@ const listUsers = async () => {
       content += `
                 <tr>
                     <td> ${user.id} </td>
-                    <td> ${user.nombres} </td>
-                    <td> ${user.apellidos} </td>
+                    <td> ${user.nombre} </td>
+                    <td> ${user.apellido} </td>
                     <td> ${user.correo} </td>
-                    <td> ${user.telefono} </td>
+                    <td> ${user.celular} </td>
                     <td><i class="fa-solid fa-circle-check"></i></td>
                     <td>
                         <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>

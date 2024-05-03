@@ -12,7 +12,7 @@
 
 /* GENERALES */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -134,8 +134,7 @@ body {
     display: block;
 }
 
-.menu-dashboard.open .input-search
-.menu-dashboard.open .menu .enlace {
+.menu-dashboard.open .input-search .menu-dashboard.open .menu .enlace {
     width: auto;
 }
 
@@ -151,18 +150,14 @@ body {
     opacity: 1;
 }
 
+/*tabla*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.table{
+    margin-left:500px;
+    display: grid;
+    align-items: center;
+    justify-content:start;
+    justify-items:start;
+    color: rgb(0, 0, 0);
+    background-color: rgb(131, 255, 214);
+}

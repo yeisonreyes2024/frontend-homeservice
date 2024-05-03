@@ -51,3 +51,10 @@ function mostrarAlerta() {
       }
     });
   }
+
+function tablaPrestadorServicios(){
+  window.location.href="https://frontend-homeservice.vercel.app/vistas/tabla.html"
+}
+function tablaUsuarios(){
+  window.location.href="https://frontend-homeservice.vercel.app/vistas/tablausuario.html"
+}

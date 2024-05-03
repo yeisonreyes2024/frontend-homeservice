@@ -287,14 +287,14 @@ const listUsers = async () => {
     console.log(users);
 
     let content = ``;
-    users.forEach((user, index) => {
+    users.data.forEach((user, index) => {
       content += `
                 <tr>
-                    <td> ${index + 1} </td>
-                    <td> ${user.name} </td>
-                    <td> ${user.email} </td>
-                    <td> ${user.address.city} </td>
-                    <td> ${user.company.name} </td>
+                    <td> ${user.id} </td>
+                    <td> ${user.nombres} </td>
+                    <td> ${user.apellidos} </td>
+                    <td> ${user.tipo_servicio} </td>
+                    <td> ${user.telefono} </td>
                     <td><i class="fa-solid fa-circle-check"></i></td>
                     <td>
                         <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>

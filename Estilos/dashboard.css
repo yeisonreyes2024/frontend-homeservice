@@ -109,7 +109,7 @@ body {
     cursor: pointer;
     font-size: 20px;
     transition: all .3s ease;
-    /* background-color: var(--azul-opacidad); */
+/* background-color: var(--azul-opacidad); */
 }
 
 .menu .enlace:hover {

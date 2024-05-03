@@ -28,6 +28,7 @@ document.getElementById('loginForm').addEventListener('submit',function (event){
                   if(res.isConfirmed){
                     window.location.href="https://frontend-homeservice.vercel.app/vistas/dashboard.html"
                     return response.text();
+                    
     
                   }
     

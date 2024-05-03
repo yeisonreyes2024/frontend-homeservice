@@ -96,5 +96,29 @@
     <!-- Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="/javascript/tabla.js"></script>
+
+<!--tabla edicion-->
+
+<table class="table table-dark">
+    <tbody>
+      <tr>
+        <th scope="row" hidden>#</th>
+        <td colspan="2" class="table-active">Nombre</td>
+        <td colspan="2" class="table-active">Apellido</td>
+        <td colspan="2" class="table-active">Servicio</td>
+        <td colspan="2" class="table-active">Telfono</td>
+      </tr>
+      <tr>
+        <td colspan="2" hidden>#</td>
+        <td colspan="2">Nombre</td>
+        <td colspan="2">Apellido</td>
+        <td colspan="2">Servicio </td>
+        <td colspan="2">Telefono</td>
+    </tr>
+    <td>
+        <button class="btn_actualizar" id="btnActualizar" onClick="btnActualizar()">Guardar</button>
+    </td>
+    </tbody>
+  </table>
   </body>
 </html>

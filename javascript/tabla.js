@@ -2,227 +2,227 @@ let dataTable;
 let dataTableIsInitialized = false;
 
 let dataTableOptions = {
-  dom: 'Bfrtilp',
+  dom: "Bfrtilp",
   buttons: [
     {
-      extend: 'excelHtml5',
+      extend: "excelHtml5",
       text: '<i class="fas fa-file-excel"></i> ',
-      titleAttr: 'Exportar a Excel',
-      className: 'btn btn-success',
+      titleAttr: "Exportar a Excel",
+      className: "btn btn-success",
     },
     {
-      extend: 'pdfHtml5',
+      extend: "pdfHtml5",
       text: '<i class="fas fa-file-pdf"></i> ',
-      titleAttr: 'Exportar a PDF',
-      className: 'btn btn-danger',
+      titleAttr: "Exportar a PDF",
+      className: "btn btn-danger",
     },
     {
-      extend: 'print',
+      extend: "print",
       text: '<i class="fa fa-print"></i> ',
-      titleAttr: 'Imprimir',
-      className: 'btn btn-info',
+      titleAttr: "Imprimir",
+      className: "btn btn-info",
     },
   ],
   lengthMenu: [5, 10, 15, 20, 100, 200, 500],
   columnDefs: [
-    { className: 'centered', targets: [0, 1, 2, 3, 4, 5] },
+    { className: "centered", targets: [0, 1, 2, 3, 4, 5] },
     { orderable: false, targets: [2] },
     { searchable: false, targets: [1] },
-    { width: '20%', targets: [1] },
+    { width: "20%", targets: [1] },
   ],
   pageLength: 3,
   destroy: true,
   language: {
-    processing: 'Procesando...',
-    lengthMenu: 'Mostrar _MENU_ registros',
-    zeroRecords: 'No se encontraron resultados',
-    emptyTable: 'Ningún dato disponible en esta tabla',
-    infoEmpty: 'Mostrando registros del 0 al 0 de un total de 0 registros',
-    infoFiltered: '(filtrado de un total de _MAX_ registros)',
-    search: 'Buscar:',
-    infoThousands: ',',
-    loadingRecords: 'Cargando...',
+    processing: "Procesando...",
+    lengthMenu: "Mostrar _MENU_ registros",
+    zeroRecords: "No se encontraron resultados",
+    emptyTable: "Ningún dato disponible en esta tabla",
+    infoEmpty: "Mostrando registros del 0 al 0 de un total de 0 registros",
+    infoFiltered: "(filtrado de un total de _MAX_ registros)",
+    search: "Buscar:",
+    infoThousands: ",",
+    loadingRecords: "Cargando...",
     paginate: {
-      first: 'Primero',
-      last: 'Último',
-      next: 'Siguiente',
-      previous: 'Anterior',
+      first: "Primero",
+      last: "Último",
+      next: "Siguiente",
+      previous: "Anterior",
     },
     aria: {
-      sortAscending: ': Activar para ordenar la columna de manera ascendente',
-      sortDescending: ': Activar para ordenar la columna de manera descendente',
+      sortAscending: ": Activar para ordenar la columna de manera ascendente",
+      sortDescending: ": Activar para ordenar la columna de manera descendente",
     },
     buttons: {
-      copy: 'Copiar',
-      colvis: 'Visibilidad',
-      collection: 'Colección',
-      colvisRestore: 'Restaurar visibilidad',
+      copy: "Copiar",
+      colvis: "Visibilidad",
+      collection: "Colección",
+      colvisRestore: "Restaurar visibilidad",
       copyKeys:
-        'Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br /> <br /> Para cancelar, haga clic en este mensaje o presione escape.',
+        "Presione ctrl o u2318 + C para copiar los datos de la tabla al portapapeles del sistema. <br /> <br /> Para cancelar, haga clic en este mensaje o presione escape.",
       copySuccess: {
-        1: 'Copiada 1 fila al portapapeles',
-        _: 'Copiadas %ds fila al portapapeles',
+        1: "Copiada 1 fila al portapapeles",
+        _: "Copiadas %ds fila al portapapeles",
       },
-      copyTitle: 'Copiar al portapapeles',
-      csv: 'CSV',
-      excel: 'Excel',
+      copyTitle: "Copiar al portapapeles",
+      csv: "CSV",
+      excel: "Excel",
       pageLength: {
-        '-1': 'Mostrar todas las filas',
-        _: 'Mostrar %d filas',
+        "-1": "Mostrar todas las filas",
+        _: "Mostrar %d filas",
       },
-      pdf: 'PDF',
-      print: 'Imprimir',
-      renameState: 'Cambiar nombre',
-      updateState: 'Actualizar',
-      createState: 'Crear Estado',
-      removeAllStates: 'Remover Estados',
-      removeState: 'Remover',
-      savedStates: 'Estados Guardados',
-      stateRestore: 'Estado %d',
+      pdf: "PDF",
+      print: "Imprimir",
+      renameState: "Cambiar nombre",
+      updateState: "Actualizar",
+      createState: "Crear Estado",
+      removeAllStates: "Remover Estados",
+      removeState: "Remover",
+      savedStates: "Estados Guardados",
+      stateRestore: "Estado %d",
     },
     autoFill: {
-      cancel: 'Cancelar',
-      fill: 'Rellene todas las celdas con <i>%d</i>',
-      fillHorizontal: 'Rellenar celdas horizontalmente',
-      fillVertical: 'Rellenar celdas verticalmentemente',
+      cancel: "Cancelar",
+      fill: "Rellene todas las celdas con <i>%d</i>",
+      fillHorizontal: "Rellenar celdas horizontalmente",
+      fillVertical: "Rellenar celdas verticalmentemente",
     },
-    decimal: ',',
+    decimal: ",",
     searchBuilder: {
-      add: 'Añadir condición',
+      add: "Añadir condición",
       button: {
-        0: 'Constructor de búsqueda',
-        _: 'Constructor de búsqueda (%d)',
+        0: "Constructor de búsqueda",
+        _: "Constructor de búsqueda (%d)",
       },
-      clearAll: 'Borrar todo',
-      condition: 'Condición',
+      clearAll: "Borrar todo",
+      condition: "Condición",
       conditions: {
         date: {
-          after: 'Despues',
-          before: 'Antes',
-          between: 'Entre',
-          empty: 'Vacío',
-          equals: 'Igual a',
-          notBetween: 'No entre',
-          notEmpty: 'No Vacio',
-          not: 'Diferente de',
+          after: "Despues",
+          before: "Antes",
+          between: "Entre",
+          empty: "Vacío",
+          equals: "Igual a",
+          notBetween: "No entre",
+          notEmpty: "No Vacio",
+          not: "Diferente de",
         },
         number: {
-          between: 'Entre',
-          empty: 'Vacio',
-          equals: 'Igual a',
-          gt: 'Mayor a',
-          gte: 'Mayor o igual a',
-          lt: 'Menor que',
-          lte: 'Menor o igual que',
-          notBetween: 'No entre',
-          notEmpty: 'No vacío',
-          not: 'Diferente de',
+          between: "Entre",
+          empty: "Vacio",
+          equals: "Igual a",
+          gt: "Mayor a",
+          gte: "Mayor o igual a",
+          lt: "Menor que",
+          lte: "Menor o igual que",
+          notBetween: "No entre",
+          notEmpty: "No vacío",
+          not: "Diferente de",
         },
         string: {
-          contains: 'Contiene',
-          empty: 'Vacío',
-          endsWith: 'Termina en',
-          equals: 'Igual a',
-          notEmpty: 'No Vacio',
-          startsWith: 'Empieza con',
-          not: 'Diferente de',
-          notContains: 'No Contiene',
-          notStartsWith: 'No empieza con',
-          notEndsWith: 'No termina con',
+          contains: "Contiene",
+          empty: "Vacío",
+          endsWith: "Termina en",
+          equals: "Igual a",
+          notEmpty: "No Vacio",
+          startsWith: "Empieza con",
+          not: "Diferente de",
+          notContains: "No Contiene",
+          notStartsWith: "No empieza con",
+          notEndsWith: "No termina con",
         },
         array: {
-          not: 'Diferente de',
-          equals: 'Igual',
-          empty: 'Vacío',
-          contains: 'Contiene',
-          notEmpty: 'No Vacío',
-          without: 'Sin',
+          not: "Diferente de",
+          equals: "Igual",
+          empty: "Vacío",
+          contains: "Contiene",
+          notEmpty: "No Vacío",
+          without: "Sin",
         },
       },
-      data: 'Data',
-      deleteTitle: 'Eliminar regla de filtrado',
-      leftTitle: 'Criterios anulados',
-      logicAnd: 'Y',
-      logicOr: 'O',
-      rightTitle: 'Criterios de sangría',
+      data: "Data",
+      deleteTitle: "Eliminar regla de filtrado",
+      leftTitle: "Criterios anulados",
+      logicAnd: "Y",
+      logicOr: "O",
+      rightTitle: "Criterios de sangría",
       title: {
-        0: 'Constructor de búsqueda',
-        _: 'Constructor de búsqueda (%d)',
+        0: "Constructor de búsqueda",
+        _: "Constructor de búsqueda (%d)",
       },
-      value: 'Valor',
+      value: "Valor",
     },
     searchPanes: {
-      clearMessage: 'Borrar todo',
+      clearMessage: "Borrar todo",
       collapse: {
-        0: 'Paneles de búsqueda',
-        _: 'Paneles de búsqueda (%d)',
+        0: "Paneles de búsqueda",
+        _: "Paneles de búsqueda (%d)",
       },
-      count: '{total}',
-      countFiltered: '{shown} ({total})',
-      emptyPanes: 'Sin paneles de búsqueda',
-      loadMessage: 'Cargando paneles de búsqueda',
-      title: 'Filtros Activos - %d',
-      showMessage: 'Mostrar Todo',
-      collapseMessage: 'Colapsar Todo',
+      count: "{total}",
+      countFiltered: "{shown} ({total})",
+      emptyPanes: "Sin paneles de búsqueda",
+      loadMessage: "Cargando paneles de búsqueda",
+      title: "Filtros Activos - %d",
+      showMessage: "Mostrar Todo",
+      collapseMessage: "Colapsar Todo",
     },
     select: {
       cells: {
-        1: '1 celda seleccionada',
-        _: '%d celdas seleccionadas',
+        1: "1 celda seleccionada",
+        _: "%d celdas seleccionadas",
       },
       columns: {
-        1: '1 columna seleccionada',
-        _: '%d columnas seleccionadas',
+        1: "1 columna seleccionada",
+        _: "%d columnas seleccionadas",
       },
       rows: {
-        1: '1 fila seleccionada',
-        _: '%d filas seleccionadas',
+        1: "1 fila seleccionada",
+        _: "%d filas seleccionadas",
       },
     },
-    thousands: '.',
+    thousands: ".",
     datetime: {
-      previous: 'Anterior',
-      next: 'Proximo',
-      hours: 'Horas',
-      minutes: 'Minutos',
-      seconds: 'Segundos',
-      unknown: '-',
-      amPm: ['AM', 'PM'],
+      previous: "Anterior",
+      next: "Proximo",
+      hours: "Horas",
+      minutes: "Minutos",
+      seconds: "Segundos",
+      unknown: "-",
+      amPm: ["AM", "PM"],
       months: {
-        0: 'Enero',
-        1: 'Febrero',
-        10: 'Noviembre',
-        11: 'Diciembre',
-        2: 'Marzo',
-        3: 'Abril',
-        4: 'Mayo',
-        5: 'Junio',
-        6: 'Julio',
-        7: 'Agosto',
-        8: 'Septiembre',
-        9: 'Octubre',
+        0: "Enero",
+        1: "Febrero",
+        10: "Noviembre",
+        11: "Diciembre",
+        2: "Marzo",
+        3: "Abril",
+        4: "Mayo",
+        5: "Junio",
+        6: "Julio",
+        7: "Agosto",
+        8: "Septiembre",
+        9: "Octubre",
       },
-      weekdays: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab'],
+      weekdays: ["Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"],
     },
     editor: {
-      close: 'Cerrar',
+      close: "Cerrar",
       create: {
-        button: 'Nuevo',
-        title: 'Crear Nuevo Registro',
-        submit: 'Crear',
+        button: "Nuevo",
+        title: "Crear Nuevo Registro",
+        submit: "Crear",
       },
       edit: {
-        button: 'Editar',
-        title: 'Editar Registro',
-        submit: 'Actualizar',
+        button: "Editar",
+        title: "Editar Registro",
+        submit: "Actualizar",
       },
       remove: {
-        button: 'Eliminar',
-        title: 'Eliminar Registro',
-        submit: 'Eliminar',
+        button: "Eliminar",
+        title: "Eliminar Registro",
+        submit: "Eliminar",
         confirm: {
-          _: '¿Está seguro que desea eliminar %d filas?',
-          1: '¿Está seguro que desea eliminar 1 fila?',
+          _: "¿Está seguro que desea eliminar %d filas?",
+          1: "¿Está seguro que desea eliminar 1 fila?",
         },
       },
       error: {
@@ -230,40 +230,40 @@ let dataTableOptions = {
           'Ha ocurrido un error en el sistema (<a target="\\" rel="\\ nofollow" href="\\">Más información&lt;\\/a&gt;).</a>',
       },
       multi: {
-        title: 'Múltiples Valores',
-        info: 'Los elementos seleccionados contienen diferentes valores para este registro. Para editar y establecer todos los elementos de este registro con el mismo valor, hacer click o tap aquí, de lo contrario conservarán sus valores individuales.',
-        restore: 'Deshacer Cambios',
+        title: "Múltiples Valores",
+        info: "Los elementos seleccionados contienen diferentes valores para este registro. Para editar y establecer todos los elementos de este registro con el mismo valor, hacer click o tap aquí, de lo contrario conservarán sus valores individuales.",
+        restore: "Deshacer Cambios",
         noMulti:
-          'Este registro puede ser editado individualmente, pero no como parte de un grupo.',
+          "Este registro puede ser editado individualmente, pero no como parte de un grupo.",
       },
     },
-    info: 'Mostrando _START_ a _END_ de _TOTAL_ registros',
+    info: "Mostrando _START_ a _END_ de _TOTAL_ registros",
     stateRestore: {
       creationModal: {
-        button: 'Crear',
-        name: 'Nombre:',
-        order: 'Clasificación',
-        paging: 'Paginación',
-        search: 'Busqueda',
-        select: 'Seleccionar',
+        button: "Crear",
+        name: "Nombre:",
+        order: "Clasificación",
+        paging: "Paginación",
+        search: "Busqueda",
+        select: "Seleccionar",
         columns: {
-          search: 'Búsqueda de Columna',
-          visible: 'Visibilidad de Columna',
+          search: "Búsqueda de Columna",
+          visible: "Visibilidad de Columna",
         },
-        title: 'Crear Nuevo Estado',
-        toggleLabel: 'Incluir:',
+        title: "Crear Nuevo Estado",
+        toggleLabel: "Incluir:",
       },
-      emptyError: 'El nombre no puede estar vacio',
-      removeConfirm: '¿Seguro que quiere eliminar este %s?',
-      removeError: 'Error al eliminar el registro',
-      removeJoiner: 'y',
-      removeSubmit: 'Eliminar',
-      renameButton: 'Cambiar Nombre',
-      renameLabel: 'Nuevo nombre para %s',
-      duplicateError: 'Ya existe un Estado con este nombre.',
-      emptyStates: 'No hay Estados guardados',
-      removeTitle: 'Remover Estado',
-      renameTitle: 'Cambiar Nombre Estado',
+      emptyError: "El nombre no puede estar vacio",
+      removeConfirm: "¿Seguro que quiere eliminar este %s?",
+      removeError: "Error al eliminar el registro",
+      removeJoiner: "y",
+      removeSubmit: "Eliminar",
+      renameButton: "Cambiar Nombre",
+      renameLabel: "Nuevo nombre para %s",
+      duplicateError: "Ya existe un Estado con este nombre.",
+      emptyStates: "No hay Estados guardados",
+      removeTitle: "Remover Estado",
+      renameTitle: "Cambiar Nombre Estado",
     },
   },
 };
@@ -275,19 +275,22 @@ const initDataTable = async () => {
 
   await listUsers();
 
-  dataTable = $('#example').DataTable(dataTableOptions);
+  dataTable = $("#example").DataTable(dataTableOptions);
 
   dataTableIsInitialized = true;
 };
 
 const listUsers = async () => {
   try {
-    const response = await fetch("http://localhost:3000/prestador-servicio/listar");
+    const response = await fetch(
+      "http://localhost:3000/prestador-servicio/listar"
+    );
     const users = await response.json();
     console.log(users);
 
     let content = ``;
     users.data.forEach((user, index) => {
+      console.log(user);
       content += `
                 <tr>
                     <td> ${user.id} </td>
@@ -297,8 +300,8 @@ const listUsers = async () => {
                     <td> ${user.telefono} </td>
                     <td><i class="fa-solid fa-circle-check"></i></td>
                     <td>
-                        <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                        <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        <button class="btn btn-sm btn-primary" id="editBtn" onClick="editUser(${user.id}, '${user.nombres}', '${user.apellidos}', '${user.tipo_servicio}', '${user.telefono}')"" ><i class="fa-solid fa-pencil"></i></button>
+                        <button class="btn btn-sm btn-danger"  id="deleteBtn" onClick="deleteUser(${user.id})" ><i class="fa-solid fa-trash-can"></i></button>
                     </td>
                 </tr>`;
     });
@@ -308,6 +311,92 @@ const listUsers = async () => {
   }
 };
 
-window.addEventListener('load', async () => {
+window.addEventListener("load", async () => {
   await initDataTable();
 });
+
+const editUser = async (userId, nombres, apellidos, tipoServicio, telefono) => {
+  // mostrar una modal....
+  // formulario inyectar la informacion.
+  // obtener los datos del formulario.
+  // detectar la accion del formulario guardar o cerrar.
+
+  fetch("http://localhost:3000/categoria-servicio/actualizar", {
+    method: "PUT",
+    body: JSON.stringify({
+      userId,
+      nombres,
+      apellidos,
+      tipoServicio,
+      telefono,
+    }),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => {
+      // Maneja la respuesta del backend
+    })
+    .catch((error) => {
+      // Maneja cualquier error
+    });
+};
+
+const deleteUser = async (idUser) => {
+  console.log(idUser);
+  fetch(`http://localhost:3000/prestador-servicio/eliminar/${idUser}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  })
+    .then((response) => {
+     console.log(response)
+     window.location.reload()
+    })
+    .catch((error) => {
+        console.error(error)
+    });
+};
+
+
+// document.getElementById("editBtn").addEventListener("click", function (event) {
+//     console.log(event)
+//   // Aquí envía una solicitud al backend para la función de edición
+//   fetch("http://localhost:3000/categoria-servicio/actualizar", {
+//     method: "POST", // o 'PUT', 'DELETE', etc.
+//     // Puedes enviar datos al backend si es necesario
+//     body: JSON.stringify({}),
+//     headers: {
+//       "Content-Type": "application/json",
+//     },
+//   })
+//     .then((response) => {
+//       // Maneja la respuesta del backend
+//     })
+//     .catch((error) => {
+//       // Maneja cualquier error
+//     });
+// });
+
+// document.getElementById("deleteBtn").addEventListener("click", function () {
+//   button.addEventListener("click", function () {
+//     // Obtiene el ID del elemento a eliminar del atributo data-id
+//     const id = this.getAttribute("data-id");
+//     // Aquí envía una solicitud al backend para la función de eliminación
+//     fetch(`http://localhost:3000/categoria-servicio/eliminar/${id}`, {
+//       method: "DELETE",
+//       // Puedes enviar datos al backend si es necesario
+//       body: JSON.stringify({}),
+//       headers: {
+//         "Content-Type": "application/json",
+//       },
+//     })
+//       .then((response) => {
+//         // Maneja la respuesta del backend
+//       })
+//       .catch((error) => {
+//         // Maneja cualquier error
+//       });
+//   });
+// });

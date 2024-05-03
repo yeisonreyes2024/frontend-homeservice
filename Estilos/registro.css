@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,23 +6,21 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body{
-    
-    background-image: url(../logos/bg3.jpg);
+body {
+    background-image: url(/logos/bg3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
 }
 
-main{
+main {
     width: 100%;
     padding: 20px;
     margin: auto;
-    margin-top: 100px;
 }
 
-.todo{
+.todo {
     width: 100%;
     max-width: 800px;
     margin: auto;
@@ -39,7 +37,7 @@ img {
     width: 200px;
 }
 
-h1{
+h1 {
     display: flex;
     align-items: center;
     width: 100%;
@@ -48,7 +46,8 @@ h1{
     left: 320px;
     color: rgb(34, 90, 195);
 }
-.nombres{
+
+.nombres {
     display: flex;
     align-items: center;
     width: 100%;
@@ -56,12 +55,12 @@ h1{
     position: relative;
     left: 300px;
     padding: 10px;
-    border-radius:10%;
+    border-radius: 10%;
     border: none;
     font-size: 16px;
 }
 
-.apellidos{
+.apellidos {
     display: flex;
     align-items: center;
     width: 100%;
@@ -69,12 +68,12 @@ h1{
     position: relative;
     left: 300px;
     padding: 10px;
-    border-radius:10%;
+    border-radius: 10%;
     border: none;
     font-size: 16px;
 }
 
-.identificacion{
+.identificacion {
     display: flex;
     align-items: center;
     width: 100%;
@@ -82,12 +81,12 @@ h1{
     position: relative;
     left: 300px;
     padding: 10px;
-    border-radius:10%;
+    border-radius: 10%;
     border: none;
     font-size: 16px;
 }
 
-.telefono{
+.telefono {
     display: flex;
     align-items: center;
     width: 100%;
@@ -95,12 +94,12 @@ h1{
     position: relative;
     left: 300px;
     padding: 10px;
-    border-radius:10%;
+    border-radius: 10%;
     border: none;
     font-size: 16px;
 }
 
-.direccion{
+.direccion {
     display: flex;
     align-items: center;
     width: 100%;
@@ -108,12 +107,12 @@ h1{
     position: relative;
     left: 300px;
     padding: 10px;
-    border-radius:10%;
+    border-radius: 10%;
     border: none;
     font-size: 16px;
 }
 
-.email{
+.email {
     display: flex;
     align-items: center;
     width: 100%;
@@ -121,12 +120,12 @@ h1{
     position: relative;
     left: 300px;
     padding: 10px;
-    border-radius:10%;
+    border-radius: 10%;
     border: none;
     font-size: 16px;
 }
 
-.password{
+.password {
     display: flex;
     align-items: center;
     width: 100%;
@@ -134,25 +133,27 @@ h1{
     position: relative;
     left: 300px;
     padding: 10px;
-    border-radius:10%;
+    border-radius: 10%;
     border: none;
     font-size: 16px;
 }
-.t_servicio{
-    
-        display: flex;
-        align-items: center;
-        width: 100%;
-        max-width: 210px;
-        position: relative;
-        left: 300px;
-        padding: 10px;
-        border-radius:10%;
-        border: none;
-        font-size: 16px;
-    
+
+.t_servicio {
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 210px;
+    position: relative;
+    left: 300px;
+    padding: 10px;
+    border-radius: 10%;
+    border: none;
+    font-size: 16px;
+
 }
-a{
+
+a {
     display: flex;
     align-items: center;
     width: 100%;
@@ -166,7 +167,7 @@ a{
     text-align: center;
 }
 
-button{
+button {
     display: flex;
     align-items: center;
     width: 100%;
@@ -179,4 +180,4 @@ button{
     border: none;
     cursor: pointer;
     text-align: center;
-} 
+}

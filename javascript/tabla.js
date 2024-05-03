@@ -283,7 +283,7 @@ const initDataTable = async () => {
 const listUsers = async () => {
   try {
     const response = await fetch(
-      "http://localhost:3000/prestador-servicio/listar"
+      "https://backend-homeservice-h98h4y0rd-yurani-castellanos-projects.vercel.app/prestador-servicio/listar"
     );
     const users = await response.json();
     console.log(users);
@@ -321,7 +321,7 @@ const editUser = async (userId, nombres, apellidos, tipoServicio, telefono) => {
   // obtener los datos del formulario.
   // detectar la accion del formulario guardar o cerrar.
 
-  fetch("http://localhost:3000/categoria-servicio/actualizar", {
+  fetch("https://backend-homeservice-h98h4y0rd-yurani-castellanos-projects.vercel.app/categoria-servicio/actualizar", {
     method: "PUT",
     body: JSON.stringify({
       userId,
@@ -344,7 +344,7 @@ const editUser = async (userId, nombres, apellidos, tipoServicio, telefono) => {
 
 const deleteUser = async (idUser) => {
   console.log(idUser);
-  fetch(`http://localhost:3000/prestador-servicio/eliminar/${idUser}`, {
+  fetch(`https://backend-homeservice-h98h4y0rd-yurani-castellanos-projects.vercel.app/prestador-servicio/eliminar/${idUser}`, {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
@@ -363,7 +363,7 @@ const deleteUser = async (idUser) => {
 // document.getElementById("editBtn").addEventListener("click", function (event) {
 //     console.log(event)
 //   // Aquí envía una solicitud al backend para la función de edición
-//   fetch("http://localhost:3000/categoria-servicio/actualizar", {
+//   fetch("https://backend-homeservice-h98h4y0rd-yurani-castellanos-projects.vercel.app/categoria-servicio/actualizar", {
 //     method: "POST", // o 'PUT', 'DELETE', etc.
 //     // Puedes enviar datos al backend si es necesario
 //     body: JSON.stringify({}),
@@ -384,7 +384,7 @@ const deleteUser = async (idUser) => {
 //     // Obtiene el ID del elemento a eliminar del atributo data-id
 //     const id = this.getAttribute("data-id");
 //     // Aquí envía una solicitud al backend para la función de eliminación
-//     fetch(`http://localhost:3000/categoria-servicio/eliminar/${id}`, {
+//     fetch(`https://backend-homeservice-h98h4y0rd-yurani-castellanos-projects.vercel.app/categoria-servicio/eliminar/${id}`, {
 //       method: "DELETE",
 //       // Puedes enviar datos al backend si es necesario
 //       body: JSON.stringify({}),

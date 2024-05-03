@@ -8,23 +8,23 @@ main{
 
 h1 {
     position: relative;
-    left: 200px
-    font-size: 70px;
+    left: 160px;
+    font-size: 40px;
 }
 
 .subtitulo {
-    font-size: 38px;
+    font-size: 30px;
     color: black;
     position: relative;
-    bottom: -15px;
-    left: 200px;
+    bottom: -105px;
+    left: 160px;
 }
 
 .primero {
     text-align: center;
     position: relative;
-    top: -90px;
-    left: 1600px;
+    top: -190px;
+    left: 1200px;
     background-color: blue;
     color: white;
     width: 100px;
@@ -36,8 +36,8 @@ h1 {
 .segundo {
     text-align: center;
     position: relative;
-    top: -80px;
-    left: 1620px;
+    top: -180px;
+    left: 1250px;
     background-color: blue;
     color: white;
     width: 100px;
@@ -49,8 +49,8 @@ h1 {
 .tercero {
     text-align: center;
     position: relative;
-    top: 90px;
-    left: 1490px;
+    top: 190px;
+    left: 1120px;
     background-color: blue;
     color: white;
     width: 100px;
@@ -62,8 +62,8 @@ h1 {
 .cuarto {
     text-align: center;
     position: relative;
-    top: 90px;
-    left: 1500px;
+    top: 190px;
+    left: 1130px;
     background-color: blue;
     color: white;
     width: 110px;
@@ -75,8 +75,8 @@ h1 {
 .quinto {
     text-align: center;
     position: relative;
-    top: 90px;
-    left: 1510px;
+    top: 190px;
+    left: 1140px;
     background-color: blue;
     color: white;
     width: 100px;
@@ -88,35 +88,46 @@ h1 {
 .linea {
     display: flex;
     content: "";
-    width: 2050px;
+    width: 1300px;
     height: 4px;
     background-color: black;
-    margin: -80px 200px;
+    margin: -180px 160px;
 }
+
+.logo {
+    position: relative;
+    left: 20px;
+    margin: -25px;
+    bottom: 70px;
+    height: 200px;
+    width: 200px;
+ }
 
 .linea1 {
 
     width: 4px;
-    height: 710px;
+    height: 580px;
     background-color: black;
-    margin: -600px 850px;
+    margin: -450px 720px;
     position: relative;
-    bottom: 360px;
+    bottom: 280px;
 
 }
 
 .linea2 {
     display: flex;
     content: "";
-    width: 900px;
+    width: 700px;
     height: 4px;
     background-color: black;
-    margin: -520px 915px;
+    margin: -550px 750px;
     text-align: right;
 
 }
 
 .plomero {
+    position: relative;
+    top: 100px;
     margin: 70px;
 }
 
@@ -124,15 +135,15 @@ h1 {
     color: blue;
     font-size: x-large;
     position: relative;
-    bottom: 280px;
-    left: -300px;
+    bottom: 210px;
+    left: -210px;
     text-align: center;
 }
 
 .domicilio {
-    font-size: xx-large;
+    font-size: x-large;
     position: relative;
-    bottom: 200px;
+    bottom: 170px;
 }
 
 .carrito1 {
@@ -141,16 +152,16 @@ h1 {
     position: relative;
     top: -400px;
     text-align: left;
-    margin-left: 930px;
+    margin-left: 750px;
 }
 
 .CARRITO {
     font-size: xx-large;
     color: black;
     position: relative;
-    top: -350px;
+    top: -380px;
     text-align: left;
-    margin-left: 930px;
+    margin-left: 760px;
 
 }
 
@@ -158,47 +169,69 @@ h1 {
     font-size: xx-large;
     color: black;
     position: relative;
-    left: 1700px;
-    bottom: 490px;
+    left: 1300px;
+    bottom: 520px;
 }
 
 .total {
     font-size: xx-large;
     color: black;
     position: relative;
-    left: 930px;
-    bottom: -500px;
+    left: 760px;
+    bottom: -530px;
 }
 
 .total1 {
     font-size: xx-large;
     color: black;
     position: relative;
-    left: 1700px;
-    bottom: -430px;
+    left: 1300px;
+    bottom: -470px;
 }
 
 .gris {
     position: relative;
-    left: 1100px;
-    bottom: -420px;
+    left: 955px;
+    bottom: -480px;
     background-color: grey;
     color: black;
-    width: 500px;
-    height: 100px;
+    width: 300px;
+    height: 80px;
     font-size: 35px;
-    border-radius: 35px;
+    border-radius: 20px;
 }
 
 .azul {
     position: relative;
-    left: 600px;
-    bottom: -540px;
+    left: 650px;
+    bottom: -580px;
     background-color: blue;
     color: white;
-    width: 500px;
-    height: 100px;
+    width: 300px;
+    height: 80px;
     font-size: 35px;
     border-radius: 20px;
 
 }
+nav{
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 6px 20px;
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+  }
+  ul li:hover{
+    background-color: #2652e4;
+    border-radius: 25px;
+    text-decoration: none;
+  }
+  

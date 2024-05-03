@@ -1,13 +1,14 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-html{
+
+html {
   font-size: 62.5%;
 }
-.container{
+
+.container {
   width: 100%;
   height: 100vh;
   background-color: #a4c3eb;
@@ -15,27 +16,34 @@ html{
   min-width: 1200px;
   position: relative;
 }
-.logo{
+
+.logo {
   font-weight: 600;
   font-size: 3.8rem;
+  margin-top: -40px;
+  margin-left: -400px;
 }
 
-img{
-width:200px;
-height:200px;
-left: 800px;
+img {
+  margin-top: 30px;
+  width: 200px;
+  height: 200px;
+  left: 800px;
 }
-.lista li a{
-    text-decoration: none;
-    color: #000000;
+
+.lista li a {
+  text-decoration: none;
+  color: #000000;
 }
-nav{
+
+nav {
   padding: 0px 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
-ul li{
+
+ul li {
   display: inline-block;
   list-style: none;
   padding: 6px 20px;
@@ -45,28 +53,34 @@ ul li{
   cursor: pointer;
   transition: all 0.3s ease 0s;
 }
-ul li:hover{
+
+ul li:hover {
   background-color: #2652e4;
   border-radius: 25px;
   text-decoration: none;
 }
-header{
- position: absolute;
- bottom: 30%;
- padding: 0 50px;
+
+header {
+  position: absolute;
+  bottom: 30%;
+  padding: 0 50px;
 }
-header h1{
+
+header h1 {
   font-size: 7rem;
 }
-header h2{
+
+header h2 {
   font-size: 4rem;
 }
-header p{
+
+header p {
   font-size: 1.5rem;
   margin-top: 20px;
   margin-bottom: 20px;
 }
-header button{
+
+header button {
   padding: 0 5px;
   width: 140px;
   height: 40px;
@@ -80,53 +94,60 @@ header button{
   border-radius: 25px;
   transition: width 0.5s;
 }
-button img{
+
+button img {
   display: none;
 }
-button:hover img{
+
+button:hover img {
   display: block;
 }
-header button:hover{
+
+header button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 160px;
 }
 
-.container .emp{
+.container .emp {
   position: absolute;
-  height: 500px;
+  height: 550px;
   width: 450px;
   right: 7%;
   bottom: 0;
   z-index: 999;
 }
-.container .fondo-emp{
-  position: absolute;
+
+.container .fondo-emp {
+  position:absolute;
   height: 550px;
   width: 550px;
   right: 4%;
   bottom: 0;
 }
-.icons{
+
+.icons {
   position: absolute;
   bottom: 8%;
   padding: 0 50px;
 }
-.icons i{
+
+.icons i {
   font-size: 2.5rem;
   padding: 0 10px;
   cursor: pointer;
 }
-.icons i:hover{
+
+.icons i:hover {
   color: #2652e4;
   transition: all 0.3s ease 0s;
 }
 
 .flecha {
-    position: absolute;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-    left: 165px;
+  position: absolute;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  left: 165px;
 }

@@ -31,7 +31,7 @@ document.getElementById('registro_prestador_servicioForm').addEventListener('sub
     };
 
     
-    fetch("https://backend-homeservice-573uolvsp-yurani-castellanos-projects.vercel.app/prestador-servicio/registrar", requestOptions)
+    fetch("http://localhost:3000/prestador-servicio/registrar", requestOptions)
       .then((response) => {
           if(response.status == 400){
             Swal.fire({

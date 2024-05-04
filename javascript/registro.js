@@ -31,7 +31,7 @@
     };
 
     
-    fetch("https://backend-homeservice-573uolvsp-yurani-castellanos-projects.vercel.app/usuario/registrar", requestOptions)
+    fetch("http://localhost:3000/usuario/registrar", requestOptions)
       .then((response) => {
           if(response.status == 400){
             Swal.fire({

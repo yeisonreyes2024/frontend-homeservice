@@ -11,7 +11,7 @@ document.getElementById('loginForm').addEventListener('submit',function (event){
     }
 
     if(type == "cliente"){
-      axios.post("https://backend-homeservice-573uolvsp-yurani-castellanos-projects.vercel.app/usuario/login",data).then((response)=>{
+      axios.post("http://localhost:3000/usuario/login",data).then((response)=>{
       if(response.data.error === true){
         Swal.fire({
             title: 'No se encontró el usuario',
@@ -44,7 +44,7 @@ document.getElementById('loginForm').addEventListener('submit',function (event){
     })
     })
     }else{
-      axios.post("https://backend-homeservice-573uolvsp-yurani-castellanos-projects.vercel.app/prestador_servicio/login",data).then((response)=>{
+      axios.post("http://localhost:3000/prestador_servicio/login",data).then((response)=>{
       if(response.data.error === true){
                 Swal.fire({
                     title: 'No se encontró el usuario',

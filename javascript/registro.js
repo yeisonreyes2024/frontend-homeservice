@@ -31,7 +31,7 @@
     };
 
     
-    fetch("https://backend-homeservice-h98h4y0rd-yurani-castellanos-projects.vercel.app/usuario/registrar", requestOptions)
+    fetch("https://backend-homeservice-573uolvsp-yurani-castellanos-projects.vercel.app/usuario/registrar", requestOptions)
       .then((response) => {
           if(response.status == 400){
             Swal.fire({

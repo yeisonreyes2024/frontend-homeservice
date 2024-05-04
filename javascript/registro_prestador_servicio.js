@@ -31,7 +31,7 @@ document.getElementById('registro_prestador_servicioForm').addEventListener('sub
     };
 
     
-    fetch("https://backend-homeservice-h98h4y0rd-yurani-castellanos-projects.vercel.app/prestador-servicio/registrar", requestOptions)
+    fetch("https://backend-homeservice-573uolvsp-yurani-castellanos-projects.vercel.app/prestador-servicio/registrar", requestOptions)
       .then((response) => {
           if(response.status == 400){
             Swal.fire({

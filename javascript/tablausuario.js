@@ -282,7 +282,7 @@ const initDataTable = async () => {
 
 const listUsers = async () => {
   try {
-    const response = await fetch("https://backend-homeservice-h98h4y0rd-yurani-castellanos-projects.vercel.app/usuario/listar");
+    const response = await fetch("https://backend-homeservice-573uolvsp-yurani-castellanos-projects.vercel.app/usuario/listar");
     const users = await response.json();
     console.log(users);
 

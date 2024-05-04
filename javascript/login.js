@@ -44,7 +44,7 @@ document.getElementById('loginForm').addEventListener('submit',function (event){
     })
     })
     }else{
-      axios.post("http://localhost:3000/prestador_servicio/login",data).then((response)=>{
+      axios.post("http://localhost:3000/prestador-servicio/login",data).then((response)=>{
       if(response.data.error === true){
                 Swal.fire({
                     title: 'No se encontró el usuario',
